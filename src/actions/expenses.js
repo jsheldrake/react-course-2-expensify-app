@@ -19,7 +19,7 @@ export const addExpense = expense => ({
   expense
 });
 
-// START_ADD_EXPENSE
+// StartAddExpense
 export const startAddExpense = (expenseData = {}) => {
   return (dispatch) => {
     const {
@@ -45,13 +45,12 @@ export const removeExpense = ({ id } = {}) => ({
   id
 });
 
-// START_REMOVE_EXPENSE
+// StartRemoveExpense
 export const startRemoveExpense = ({ id } = {}) => {
  return (dispatch) => {
-  return database.ref(`expenses/${id}`).remove()
-    .then(() => {
+  return database.ref(`expenses/${id}`).remove().then(() => {
       dispatch(removeExpense({ id }));
-    });
+  });
  };
 }; 
 
@@ -68,7 +67,7 @@ export const setExpenses = (expenses) => ({
   expenses
 });
 
-// START_SET_EXPENSES
+// StartSetExpenses
 export const startSetExpenses = () => {
   return (dispatch) => {
     return database.ref('expenses').once('value').then((snapshot) => {
