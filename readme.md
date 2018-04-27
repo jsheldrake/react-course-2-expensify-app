@@ -1,10 +1,14 @@
 # Demo
 [Demo of this application (hosted on Heroku)](https://quiet-reaches-30094.herokuapp.com/)
 
-# Install and Run
+(Requires Google account to log in)
+
+# Install and Run locally
 
 ## Add Firebase config
-The app is setup to use two instances of Firebase, one for development/production and one for test.
+To run locally, you'll require an instance of Firebase for the back end of the app.
+
+The app is set up to use two instances of Firebase, one for development/production and one for test.
 
 1. Create a new Firebase instance at [firebase.google.com/](https://firebase.google.com/).
 2. Create a new file at the root of the app called `.env.development`
