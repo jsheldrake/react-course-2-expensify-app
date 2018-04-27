@@ -10,6 +10,8 @@ To run locally, you'll require an instance of Firebase for the back end of the a
 
 The app is set up to use two instances of Firebase, one for development/production and one for test.
 
+### Instructions
+
 1. Create a new Firebase instance at [firebase.google.com/](https://firebase.google.com/).
 2. Create a new file at the root of the app called `.env.development`
 3. Copy the following into the file:
